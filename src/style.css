@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.mode{
+    background-color: rgb(233, 243, 146);
+    color: #fff;
+}
+
+.btn-switch{
+    background-color: rgb(0, 0, 0);
+    margin-left: .5rem;
+    margin-right: .5rem;
+    width: 5rem;
+    height: 2.3rem;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+.btn-switch::before{
+    content: "";
+    background-color: #3193DE;
+    position: relative;
+    display: block;    
+    left: 2.5rem;
+    width: 2.2rem;
+    height: 1.9rem;
+    border-radius: .3rem;
+    border: .2rem solid #333;
+}
+.btn-switch-on::before{
+    left: 0;
+}
+.dark-mode{
+    background-color: rgb(71, 70, 70);
+    color: #fff;
+}
